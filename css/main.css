@@ -14,21 +14,25 @@ body {
     background-color: #f6f8fa;
     ;
 }
+
 button {
     font-family: 'Charter-Regular';
     background-color: white;
     border-radius: 0.9rem;
     transition: 200ms;
 }
+
 button:hover {
     color: azure;
     cursor: pointer;
     background-color: #5e00ff;
 }
-input{
+
+input {
     border-radius: 0.8rem;
     border: 0cm;
 }
+
 .main-layout {
     height: 100vh;
 }
@@ -41,18 +45,13 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo {
     font-family: "Charter-Bold";
     color: white;
     font-size: 2.4rem;
     margin-left: 8vw;
 }
-.search-bar{
-    display: flex;
-    position: sticky;
-    right: 0;
-    margin: auto;
-}
+
 .curr-location {
     height: 10vh;
     display: flex;
@@ -64,11 +63,32 @@ header {
     display: grid;
     grid-template-columns: 4fr 6fr;
 }
-
-.locations {
+.search-bar{
+    margin: 0 auto;
+}
+.Locations {
+    background-color: #ffffff;
     grid-column: 1;
+    border-radius: 1.7vw;
+    width: 80%;
+    box-shadow:
+        0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(166, 173, 201, 0.2);
+    justify-self: center;
+    text-align: center;
+}
+
+.Locations button {
+    width: min-content;
 }
 
 .map {
+    border-radius: 1.7vw;
     grid-column: 2;
+}
+@media (min-width: 840px) {
+    .search-bar {
+        position: absolute;
+        right: 20vh;
+    }
 }
