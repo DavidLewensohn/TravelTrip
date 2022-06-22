@@ -16,4 +16,16 @@ function getLocs() {
     });
 }
 
+function creatLocation() {
+    return {
+        // id: '',
+        name: '',
+        lat: '',
+        lng: '',
+        // weather: '',
+        // createdAt: '',
+        // updatedAt: '',
+    }
+}
+
 
